@@ -21,6 +21,7 @@ namespace ReCaptchaApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            NSUserDefaults.StandardUserDefaults.RegisterDefaults(new NSDictionary("UserAgent", "Googlebot/2.1"));
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

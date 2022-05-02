@@ -2,13 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ReCaptchaApp"
-             x:Class="ReCaptchaApp.MainPage">
+             x:Class="ReCaptchaApp.MainPage"
+             BackgroundColor="Thistle">
 
-    <StackLayout>
+    <StackLayout Spacing="15" Margin="20" VerticalOptions="Center">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="Register new user" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="Center" />
+        <Entry Placeholder="Username"/>
+        <Entry Placeholder="Password"/>
+        <Entry Placeholder="Repeat password"/>
+        <Button Text="Submit" Clicked="Button_OnClicked"/>
     </StackLayout>
 
 </ContentPage>
